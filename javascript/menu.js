@@ -5,4 +5,5 @@ var btn = document.getElementById("btn-open");
 function open_close(){
     body.classList.toggle("body2");
     menu_side.classList.toggle("menu2");
+
 }
