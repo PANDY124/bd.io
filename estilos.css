@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin-left: 0px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+/*CABECERA*/
+nav h1{
+    position: relative;
+    top: 25px;
+    color: white;
+    margin-left: 80px;
+    text-align: center;
+
+    
+}
+nav{
+    height: 80px;
+    display: block;
+    width: 100%;
+    background-color: dodgerblue;
+
+}
+nav .menu-1{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    
+    margin-left: 20px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    cursor: pointer;
+}
+/*TERMINA CABACERA*/
+/*ESTILOS DEL MENU*/
+.menu{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: coral;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    margin-left: -200px;
+    overflow-y: scroll;
+    transition: .5s;
+}
+/*Ocultar scroll para chrome, safari y opera*/
+.menu::-webkit-scrollbar{
+    display: none;
+}
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu ul{
+    position: relative;
+    margin-top: 30px;
+    
+}
+.menu li[id="pr"]{
+    cursor: default;
+}
+.menu li{
+    width: 250px;
+    display: inline-flex;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .6s;
+
+}
+.menu li h3{
+    margin-left: 20px;
+    margin-top: 9px;
+    font-size: 15px;
+    color: white;
+}
+.menu li img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 5px;
+}
+.menu li:hover{
+    background-color: #ff3f04;
+}
+/*TERMINA ESTILOS DE MENU*/
+/*ESTILOS DE JAVA SCRIPT*/
+.body2{
+    margin-left: 200px;
+}
+.menu2{
+    left: 200px;
+}
+
+/*TERMINA ESTILOS DE JAVA SCRIPT*/
+/*login*/
+main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+}
+.fondo{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.form{
+    position: relative;
+    top: 50px;
+    left: 250px;
+    width: 700px;
+    height: 400px;
+    box-shadow: 0 0 30px white,  0 0 60px blue;
+    background-color: transparent;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    
+}
+.form input[name="usuario"]{
+    position: relative;
+    top: 100px;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255,  0.4);
+    left: 80px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.form input[name="usuario"]::placeholder{
+    font-size: 15px;
+    color: black;
+}
+
+.form input[name="pass"]{
+    position: relative;
+    display: flex;
+    top: 120px;
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    left: 80px;
+    background-color: rgb(255, 255, 255,  0.4);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.form input[name="pass"]::placeholder{
+    color: black;
+}
+.form input[name="registrar"]{
+    position: relative;
+    display: flex;
+    top: 140px;
+    left: 80px;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 15px ;
+    padding-left: 60px;
+    cursor: pointer;
+    border: 0;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+    background-color: rgb(0, 148, 231 , 0.5) ;
+    transition: .6s;
+}
+.form input[name="registrar"]:hover{
+    background-color: rgb(254, 7, 7 ,0.5);
+    color: white;
+}
+.ti-re{
+    width: 220px;
+    position: relative;
+    display: flex;
+    text-shadow: 0 0 15px red, 0  0 30px  red;
+    color: white;
+    font-size: 35px;
+    
+    top: 50px;
+    left: 70px;
+    border: 0;
+}
+.lo-gin{
+    width: 280px;
+    position: absolute;
+    display: flex;
+    text-shadow: 0 0 15px red, 0  0 30px  red;
+    color: white;
+    font-size: 35px;
+    
+    top: 50px;
+    left: 370px;
+    border: 0;
+}
+.login{
+    position: absolute;
+    left: 350px;
+    top: 0;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(15, 4, 161);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    transition: 1.7s;
+    z-index: 4;
+}
+.tl-lg{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    color: white;
+    transition: 1.5s;
+}
+.tl-rg{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    color: transparent;
+    transition: 1.5s;
+
+}
+.inf-login{
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    padding-right: 50px;
+    color: white;
+    text-align: center;
+    font-size: 25px ;
+    transition: 2s;
+}
+.inf-register{
+    opacity: 0;
+    position: absolute;
+    left: 30px;
+    top: 90px;
+    padding-right: 50px;
+    color:transparent;
+    text-align: center;
+    font-size: 25px ;
+    transition: 2s;
+}
+
+
+.pulse{
+    position: relative;
+    top: 250px;
+    left: 120px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+form[name="login"]{
+    position: absolute;
+    left: 320px;
+    top: 40px;
+    text-decoration: none;
+    padding-left: 0px;
+}
+.form input[name="login"]{
+    position: relative;
+    display: flex;
+    top: 140px;
+    left: 80px;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 15px ;
+    padding-left: 50px;
+    cursor: pointer;
+    border: 0;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+    background-color: rgb(0, 148, 231 , 0.5) ;
+    transition: .6s;
+}
+.form input[name="login"]:hover{
+    background-color: rgb(254, 7, 7 ,0.5);
+    color: white;
+}
+
+/*termino login*/
+/*ESTILOS DE ALERTA*/
+.al-1{
+    color:white;
+}
+.titulo{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+/*TERMINO DE ESTILOS DE ALERTA*/
