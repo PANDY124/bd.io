@@ -22,7 +22,7 @@
             <div class="login" id="lg-2">
                <h1 class="tl-lg" id="ti-lg">INICIAR SECCION</h1>
                <h1 class="tl-rg" id="ti-rg">REGISTRARSE</h1>
-                <p class="inf-login" id="inf-lg">SI YA TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
+                <p class="inf-login" id="inf-lg">Si YA TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
                 <p class="inf-register" id="inf-rg">SI NO TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
                 <img src="menu/pulse-aqui.png" class="pulse" id="btn-4">
             
@@ -45,6 +45,7 @@
     
     <script src="javascript/funciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--  OLA-->
     
 </body>
 </html>
