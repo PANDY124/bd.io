@@ -23,7 +23,9 @@ function valida_envia(){
 document.getElementById("btn-4").addEventListener("click",login_register);
 
 function login_register(){
-    if(document.getElementById("lg-2").style.left=="0px"){
+
+    if(window.innerWidth > 777){
+        if(document.getElementById("lg-2").style.left=="0px"){
         document.getElementById("lg-2").style.left="350px";
         document.getElementById("ti-lg").style.color="white";
         document.getElementById("ti-rg").style.color="transparent";
@@ -32,7 +34,7 @@ function login_register(){
         document.getElementById("inf-rg").style.color="transparent";
         document.getElementById("inf-rg").style.opacity="0";
         document.getElementById("inf-rg").style.top="120px";
-       
+        
 
     }else{
     document.getElementById("lg-2").style.left="0px";
@@ -44,7 +46,33 @@ function login_register(){
     document.getElementById("inf-rg").style.opacity="1";
     document.getElementById("inf-rg").style.top="150px";
 
+ }
 
-    }
+}else{
+    if(document.getElementById("lg-2").style.top=="0px"){
+        document.getElementById("lg-2").style.top="260px";
+        document.getElementById("ti-lg").style.color="white";
+        document.getElementById("ti-rg").style.color="transparent";
+        document.getElementById("inf-lg").style.color="white";
+        document.getElementById("inf-lg").style.opacity="1";
+        document.getElementById("inf-rg").style.color="transparent";
+        document.getElementById("inf-rg").style.opacity="0";
+        document.getElementById("inf-rg").style.top="120px";
+    }else{
+    document.getElementById("lg-2").style.top="0px";
+    document.getElementById("ti-lg").style.color="transparent";
+    document.getElementById("ti-rg").style.color="white";
+    document.getElementById("inf-lg").style.color="transparent";
+    document.getElementById("inf-lg").style.opacity="0";
+    document.getElementById("inf-rg").style.color="white";
+    document.getElementById("inf-rg").style.opacity="1";
+    document.getElementById("inf-rg").style.top="150px";
+
+ }
 }
+}
+
+
+
+
 //termino de funcion de login y registro

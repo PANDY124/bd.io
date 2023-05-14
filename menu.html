@@ -28,19 +28,23 @@
             <img src="menu/galeria-de-fotos.png">
             <h3>GALERIA</h3>
         </li></a>
-        <a href="#"><li>
+        <a href="login.php"  id="log"><li>
             <img src="menu/perfil-del-usuario.png">
             <h3>INICIAR SESION</h3>
-        </li></a>
-        <a href="#"><li>
-            <img src="menu/agregar-contacto.png">
-            <h3>REGISTRARSE</h3>
         </li></a>
     </ul>
     </div>
     <!--TERMINA LA ESTRUCTURA DEL MENU-->
     <!-- script abrir y cerrar menu -->
-    <script src="javascript/menu.js"> </script>
+    <script> document.getElementById("btn-open").addEventListener("click",open_close);
+        var body = document.getElementById("body");
+        var menu_side = document.getElementById("side");
+        var btn = document.getElementById("btn-open");
+        function open_close(){
+            body.classList.toggle("body2");
+            menu_side.classList.toggle("menu2");
+        }
+        </script>
     <!-- aqui termina el script  -->
 </body>
 </html>
