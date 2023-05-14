@@ -45,7 +45,12 @@
     
     <script src="javascript/funciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<<<<<<< HEAD
     <!--  OLA-->
+=======
+    <!--HOLA-->
+    
+>>>>>>> e4ab42157c4afa31ff37cb314d55289a59841111
     
 </body>
 </html>
