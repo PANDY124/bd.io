@@ -1,7 +1,8 @@
 //alerta
-function valida_envia(){
+document.getElementById("btn-7").addEventListener("click",funcion_valida);
+function funcion_valida(){
     //valido el nombre
-    if (document.registrar.usuario.value.length == 0 || document.registrar.pass.value.length == 0) {
+    if (document.registra.usuario.value.length == 0 || document.registra.pass.value.length == 0) {
         Swal.fire({
             
             html: '<div class="titulo">ICEL ERMITA DICE:</div>'+
