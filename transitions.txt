@@ -4,4 +4,3 @@ transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
-    Fatal error: Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bdigital`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`permiso`) REFERENCES `roles` (`permisos`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\bd\login.php:41 Stack trace: #0 C:\xampp\htdocs\bd\login.php(41): mysqli_query(Object(mysqli), 'INSERT INTO usu...') #1 {main} thrown in C:\xampp\htdocs\bd\login.php on line 41
