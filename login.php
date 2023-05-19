@@ -4,45 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css?23">
+    <link rel="stylesheet" href="estilos.css?5">
     
     <title>LOGIN</title>
 </head>
 
 <?php include("menu.html"); 
-    require("php/funciones.php");
+    
 ?>
 <body>
-<!--fondo de login-->
     <main>
-        <video class="fondo" src="videos/IntroIndex.mp4" autoplay muted loop></video>
-<!--termina fondo-->
-<!--formulario para login y registro-->
-    
-        <div class="form">
-            <h2 class="ti-re">REGISTRARSE</h2>
-            <div class="login" id="lg-2">
-            <h1 class="tl-lg" id="ti-lg">INICIAR SECCION</h1>
-            <h1 class="tl-rg" id="ti-rg">REGISTRARSE</h1>
-                <p class="inf-login" id="inf-lg">Si YA TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
-                <p class="inf-register" id="inf-rg">SI NO TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
-                <img src="menu/pulse-aqui.png" class="pulse" id="btn-4">
-            
-            </div>
-            <form action="login.php" method="post" name="registra">
-                <input type="text" name="usuario" placeholder="INGRESA TU USUARIO" required>
-                <input type="password" name="pass" placeholder="INGRESA CONTRASEÑA" required>
-                <input  type="submit"  value="REGISTRAR" name="registrar" action="login.php" id="btn-7">
-            </form>
 
-            <h2 class="lo-gin">INICIAR SECCION</h2>
-            <form action="login.php" method="post" name="login">
-                <input type="text" name="usuario-lg" placeholder="INGRESA TU USUARIO" required>
-                <input type="password" name="pass-lg" placeholder="INGRESA CONTRASEÑA" required>
-                <input  type="button"  value="INICIAR SESION" name="login" action="login.php">
-            </form>
-        
-        </div>
+<!--formulario para login y registro-->
+<div class="cont-formulario">
+<div class="ir-login" id="ir-lg">
+    <h1 class="titulo-lg" name="lg"> INICIAR SESION </h1>
+    <p class="info-lg" name="in-lg">SI YA TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
+    <img class="boton" src="menu/pulse-aqui.png" onclick="login()">
+</div>
+<div class="ir-registrar" id="ir-rg">
+    <h1 class="titulo-lg"> REGISTRAR </h1>
+    <p class="info-lg">SI NO TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
+    <img class="boton" src="menu/pulse-aqui.png" onclick="register()">
+</div>
+<div class="registrar-form" id="fr-rg">
+    <h1 class="registrar-titu">REGISTRAR</h1>
+    <input type="text" id="user" placeholder="INGRESA TU USUARIO">
+    <input type="password" id="pass" placeholder="INGRESA TU PASSWORD">
+    <input type="button" value="REGISTRAR" >
+</div>
+
+<div class="login-form" id="fr-lg">
+    <h1 class="login-titu">INICIAR SESION</h1>
+    <input type="text" id="user-lg" placeholder="INGRESA TU USUARIO">
+    <input type="password" id="pass-lg" placeholder="INGRESA TU PASSWORD">
+    <input type="button" value="LOGIN" >
+</div>
+
+
+</div>
 <!--termino de formulario-->
     </main>
     <script src="javascript/funciones.js"></script>

@@ -1,77 +1,41 @@
 //alerta
-document.getElementById("btn-7").addEventListener("click",funcion_valida);
-function funcion_valida(){
-    //valido el nombre
-    if (document.registra.usuario.value.length == 0 || document.registra.pass.value.length == 0) {
-        Swal.fire({
-            
-            html: '<div class="titulo">ICEL ERMITA DICE:</div>'+
-            '<div class="al-1">LLENA TODOS LOS CAMPOS</div>',
-            icon: 'error',
-            background: 'rgb(0,148,231,0.8)',
-            position: 'top-end',
-            toast: true,
-            timer:'5000',
-            timerProgressBar:true,
-            showConfirmButton: false
-        } ,
-        );
-    }
-}
+
 //fin de alertas
 //funcion de login-register
 
-document.getElementById("btn-4").addEventListener("click",login_register);
 
-function login_register(){
+function register(){
+ var login = document.getElementById("ir-lg");
+var form_rg = document.getElementById("fr-rg");
+var registrar = document.getElementById("ir-rg");
+var form_lg = document.getElementById("fr-lg");
 
-    if(window.innerWidth > 777){
-        if(document.getElementById("lg-2").style.left=="0px"){
-        document.getElementById("lg-2").style.left="350px";
-        document.getElementById("ti-lg").style.color="white";
-        document.getElementById("ti-rg").style.color="transparent";
-        document.getElementById("inf-lg").style.color="white";
-        document.getElementById("inf-lg").style.opacity="1";
-        document.getElementById("inf-rg").style.color="transparent";
-        document.getElementById("inf-rg").style.opacity="0";
-        document.getElementById("inf-rg").style.top="120px";
-        
+   registrar.style.opacity="0";
+   registrar.style.zIndex="-1";
+   login.style.opacity="1";
+   login.style.zIndex="1";
+   form_lg.style.zIndex="-1";
+   form_lg.style.opacity="0";
+   form_rg.style.opacity="1";
+   form_rg.style.zIndex="1";
 
-    }else{
-    document.getElementById("lg-2").style.left="0px";
-    document.getElementById("ti-lg").style.color="transparent";
-    document.getElementById("ti-rg").style.color="white";
-    document.getElementById("inf-lg").style.color="transparent";
-    document.getElementById("inf-lg").style.opacity="0";
-    document.getElementById("inf-rg").style.color="white";
-    document.getElementById("inf-rg").style.opacity="1";
-    document.getElementById("inf-rg").style.top="150px";
-
- }
-
-}else{
-    if(document.getElementById("lg-2").style.top=="0px"){
-        document.getElementById("lg-2").style.top="260px";
-        document.getElementById("ti-lg").style.color="white";
-        document.getElementById("ti-rg").style.color="transparent";
-        document.getElementById("inf-lg").style.color="white";
-        document.getElementById("inf-lg").style.opacity="1";
-        document.getElementById("inf-rg").style.color="transparent";
-        document.getElementById("inf-rg").style.opacity="0";
-        document.getElementById("inf-rg").style.top="120px";
-    }else{
-    document.getElementById("lg-2").style.top="0px";
-    document.getElementById("ti-lg").style.color="transparent";
-    document.getElementById("ti-rg").style.color="white";
-    document.getElementById("inf-lg").style.color="transparent";
-    document.getElementById("inf-lg").style.opacity="0";
-    document.getElementById("inf-rg").style.color="white";
-    document.getElementById("inf-rg").style.opacity="1";
-    document.getElementById("inf-rg").style.top="150px";
-
- }
 }
-}
+function login(){
+   var login = document.getElementById("ir-lg");
+  var form_rg = document.getElementById("fr-rg");
+  var registrar = document.getElementById("ir-rg");
+  var form_lg = document.getElementById("fr-lg");
+  
+     registrar.style.opacity="1";
+     registrar.style.zIndex="1";
+     login.style.opacity="0";
+     login.style.zIndex="-1";
+     form_lg.style.zIndex="1";
+     form_lg.style.opacity="1";
+     form_rg.style.opacity="0";
+     form_rg.style.zIndex="-1";
+  
+  }
 
 
 

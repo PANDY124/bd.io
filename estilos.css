@@ -108,6 +108,10 @@ main::-webkit-scrollbar{
 .login2{
     left: 0px;
 }
+.ir-register-2{
+z-index: -1;
+opacity: 1;
+}
 
 /*TERMINA ESTILOS DE JAVA SCRIPT*/
 /*login*/
@@ -117,313 +121,227 @@ main{
     position: fixed;
     top: 80px;
     overflow-y:scroll ;
-}
-.fondo{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    object-fit: cover;
-    z-index: -1;
-}
-.form{
-    position: relative;
-    top: 50px;
-    left: 250px;
-    width: 700px;
-    height: 400px;
-    box-shadow: 0 0 30px white,  0 0 60px blue;
-    background-color: transparent;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    transition: .4s;
+    background-image: url("fondos/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
-.form input[name="usuario"]{
-    position: relative;
+.cont-formulario{
     top: 100px;
-    height: 40px;
-    width: 200px;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255,  0.4);
-    left: 80px;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-}
-.form input[name="usuario"]::placeholder{
-    font-size: 15px;
-    color: black;
-}
-
-.form input[name="pass"]{
-    position: relative;
-    display: flex;
-    top: 120px;
-    height: 40px;
-    width: 200px;
-    font-size: 15px;
-    left: 80px;
-    background-color: rgb(255, 255, 255,  0.4);
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-}
-.form input[name="pass"]::placeholder{
-    color: black;
-}
-.form input[name="usuario-lg"]{
-    position: relative;
-    top: 100px;
-    height: 40px;
-    width: 200px;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255,  0.4);
-    left: 80px;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-}
-.form input[name="usuario-lg"]::placeholder{
-    font-size: 15px;
-    color: black;
-}
-
-.form input[name="pass-lg"]{
-    position: relative;
-    display: flex;
-    top: 120px;
-    height: 40px;
-    width: 200px;
-    font-size: 15px;
-    left: 80px;
-    background-color: rgb(255, 255, 255,  0.4);
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-}
-.form input[name="pass-lg"]::placeholder{
-    color: black;
-}
-.form input[name="registrar"]{
-    position: relative;
-    display: flex;
-    top: 140px;
-    left: 80px;
-    width: 200px;
-    height: 40px;
-    text-decoration: none;
-    font-size: 15px ;
-    padding-left: 60px;
-    cursor: pointer;
-    border: 0;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-
-    background-color: rgb(0, 148, 231 , 0.5) ;
-    transition: .6s;
-}
-.form input[name="registrar"]:hover{
-    background-color: rgb(254, 7, 7 ,0.5);
-    color: white;
-}
-.ti-re{
-    width: 220px;
-    position: relative;
-    display: flex;
-    text-shadow: 0 0 15px red, 0  0 30px  red;
-    color: white;
-    font-size: 35px;
-    
-    top: 50px;
-    left: 70px;
-    border: 0;
-}
-.lo-gin{
-    width: 280px;
-    position: absolute;
-    display: flex;
-    text-shadow: 0 0 15px red, 0  0 30px  red;
-    color: white;
-    font-size: 35px;
-    
-    top: 50px;
-    left: 370px;
-    border: 0;
-}
-.login{
-    position: absolute;
     left: 350px;
-    top: 0;
-    width: 350px;
-    height: 400px;
-    background-color: rgb(15, 4, 161);
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20%;
-    transition: 1.7s;
-    z-index: 4;
-}
-.tl-lg{
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    color: white;
-    transition: 1.5s;
-}
-.tl-rg{
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    color: transparent;
-    transition: 1.5s;
-
-}
-.inf-login{
-    position: absolute;
-    left: 30px;
-    top: 150px;
-    padding-right: 50px;
-    color: white;
-    text-align: center;
-    font-size: 25px ;
-    transition: 2s;
-}
-.inf-register{
-    opacity: 0;
-    position: absolute;
-    left: 30px;
-    top: 90px;
-    padding-right: 50px;
-    color:transparent;
-    text-align: center;
-    font-size: 25px ;
-    transition: 2s;
-}
-
-
-.pulse{
-    position: relative;
-    top: 250px;
-    left: 120px;
-    width: 90px;
-    height: 90px;
-    cursor: pointer;
-}
-form[name="login"]{
-    position: absolute;
-    left: 320px;
-    top: 40px;
-    text-decoration: none;
-    padding-left: 0px;
-}
-.form input[name="login"]{
     position: relative;
     display: flex;
-    top: 140px;
-    left: 80px;
-    width: 200px;
-    height: 40px;
-    text-decoration: none;
-    font-size: 15px ;
-    padding-left: 50px;
+    width: 700px;
+    height: 300px;
+    background-color: rgb(38, 90, 252, 0.9);
+    border-radius: 10%;
+    overflow: hidden;
+    transition: .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    margin-bottom: 100px;
+}
+.ir-login{
+    color: white;
+    height: 100%;
+    width: 350px;
+    top: 0;
+    position: absolute;
+    box-shadow: 0 0 15px red;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 40px ;
+    z-index: -1;
+    opacity: 0;
+    transition: 2.5s;
+}
+.ir-registrar{
+    color: white;
+    height: 100%;
+    width: 350px;
+    left: 0;
+    box-shadow: 0 0 15px red;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 40px ;
+    z-index: 1;
+    opacity: 1;
+    transition: 2.5s;
+}
+.titulo-lg{
+    text-align: center;
+}
+.info-lg{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.boton{
+    position: relative;
+    margin-top: 40px;
+    left: 130px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
-    border: 0;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-
-    background-color: rgb(0, 148, 231 , 0.5) ;
+    transition: 0.5s;
+}
+.boton:hover{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 20px red;
+    border-radius: 10%;
+}
+.registrar-form{
+    position:absolute;
+    height: 100%;
+    width: 350px;
+    left: 350px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 40px ;
+    z-index: -1;
+    opacity: 0;
     transition: .6s;
 }
-.form input[name="login"]:hover{
-    background-color: rgb(254, 7, 7 ,0.5);
+.login-form{
+    position:absolute;
+    height: 100%;
+    width: 350px;
+    left: 400px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 40px ;
+    z-index: 1;
+    opacity: 1;
+    transition: 1.5s;
+}
+.login-titu{
+    margin-bottom: 20px;
+    
+}
+.registrar-titu{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.registrar-form input[id="user"],input[id="pass"]{
+    position: relative;
+    display: flex;
+    height: 40px;
+    left: 105px;
+    border: none;
+    background-color: rgb(237, 74, 30 ,0.5 );
+    margin-bottom: 20px;
     color: white;
 }
+.registrar-form input[id="user"]::placeholder,input[id="pass"]::placeholder{
 
+    color: white;
+    text-align: center;
+}
+.login-form input[id="user-lg"],input[id="pass-lg"]{
+    position: relative;
+    display: flex;
+    height: 40px;
+    left: 40px;
+    border: none;
+    background-color: rgb(237, 74, 30 ,0.5 );
+    margin-bottom: 20px;
+    color: white;
+}
+.login-form input[id="user-lg"]::placeholder,input[id="pass-lg"]::placeholder{
+    color: white;
+    text-align: center;
+}
+.registrar-form input[value="REGISTRAR"]{
+left: 105px;
+height: 40px;
+width: 150px;
+position: relative;
+cursor: pointer;
+background-color:rgba(240, 28, 13, 0.555) ;
+color: white;
+transition: .5s;
+}
+.login-form  input[value="LOGIN"]{
+ left: 40px;
+height: 40px;
+width: 150px;
+position: relative;
+cursor: pointer;
+background-color:rgba(240, 28, 13, 0.555) ;
+color: white;
+transition: .5s;
+}
+.login-form  input[value="LOGIN"]:hover{
+    background-color: rgba(189, 4, 245, 0.719);
+    font-size: 20px;
+}
+.registrar-form input[value="REGISTRAR"]:hover{
+    background-color: rgba(189, 4, 245, 0.719);
+    font-size: 20px;
+}
 /*termino login*/
 /*ESTILOS DE ALERTA*/
-.al-1{
-    color:white;
-}
-.titulo{
-    color: white;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
+
 /*TERMINO DE ESTILOS DE ALERTA*/
 /*responsive*/
 /*pantalla de 1000px a 777px de ancho */
-@media(max-width:1000px){
-    .form{
-        left: 50px;
+@media(max-width:1090px){
+    .cont-formulario{
+        left: 100px;
     }
 }
 /*temino de pantallas de 1000px a 414 px de ancho*/
 /*pantalla de 777px para abajo*/
-@media(max-width: 777px){
-    .form{
-        height: 580px;
-        width: 350px;
-        left: 30px;
-        
+@media(max-width: 850px){
+     .cont-formulario{
+        top: 15px;
+        width: 360px;
+        height: 600px;
+        left: 200px;
+     }
+     .login-form{
+        left: 50px;
+        top: 300px;
+     }
+     .registrar-form{
+        left: 0px;
+        top: 300px;
+     }
+}
+@media(max-width: 620px){
+    .cont-formulario{
+        left: 40px;
     }
-    .tl-lg,.tl-rg{
-        font-size: 30px;
+}
+@media(max-width: 400px){
+    .cont-formulario{
+        width: 250px;
+        left: 20px;
+        height: 550px;
     }
-    .pulse{
-        width: 70px;
-        height: 70px;
-        top: 200px;
+    .boton{
+        left: 70px;
     }
-
-    .inf-login,.inf-register{
+    .ir-login h1[name="lg"]{
+        font-size: 25px;
+        padding-right: 100px;
+    }
+    .ir-login p[name="in-lg"]{
+      position: relative;
+      width: 200px;
+      left: 30px;
+    }
+    .registrar-form{
+        left: -60px;
+        top: 270px;
         font-size: 15px;
     }
-    .form form[name="registra"]{
-        top: -40px;
-        position: absolute;
-    }
-    .form form[name="login"]{
-        top: 300px;
+    .login-form{
         left: 5px;
+        top: 270px;
+        font-size: 15px;
     }
-    .lo-gin{
-       top: 340px;
-       left: 40px;
-    }
-    .login{
-        top: 260px;
-        height: 320px;
-        left: 0px;
-    }
-    .ti-re{
-        top: 10px;
-        font-size: 30px;
-    }
-
 }
 /* termino pantalla de 777px para abajo*/
 /*termino de responsive*/
