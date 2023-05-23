@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css?5">
+    <link rel="stylesheet" href="estilos.css?51">
     
     <title>LOGIN</title>
 </head>
@@ -31,21 +31,21 @@
     <h1 class="registrar-titu">REGISTRAR</h1>
     <input type="text" id="user" placeholder="INGRESA TU USUARIO">
     <input type="password" id="pass" placeholder="INGRESA TU PASSWORD">
-    <input type="button" value="REGISTRAR" >
+    <input type="button" value="REGISTRAR" onclick="validar_rg()">
 </div>
 
 <div class="login-form" id="fr-lg">
     <h1 class="login-titu">INICIAR SESION</h1>
     <input type="text" id="user-lg" placeholder="INGRESA TU USUARIO">
     <input type="password" id="pass-lg" placeholder="INGRESA TU PASSWORD">
-    <input type="button" value="LOGIN" >
+    <input type="button" value="LOGIN" onclick="validar_lg()" >
 </div>
 
 
 </div>
 <!--termino de formulario-->
     </main>
-    <script src="javascript/funciones.js"></script>
+    <script defer src="javascript/funciones.js?5"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     
