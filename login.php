@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css?51">
+    <link rel="stylesheet" href="estilos.css?1">
     
     <title>LOGIN</title>
 </head>
@@ -20,18 +20,18 @@
 <div class="ir-login" id="ir-lg">
     <h1 class="titulo-lg" name="lg"> INICIAR SESION </h1>
     <p class="info-lg" name="in-lg">SI YA TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
-    <img class="boton" src="menu/pulse-aqui.png" onclick="login()">
+    <img class="boton" src="menu/pulse-aqui.png" id="btn-login">
 </div>
 <div class="ir-registrar" id="ir-rg">
     <h1 class="titulo-lg"> REGISTRAR </h1>
     <p class="info-lg">SI NO TIENES UNA CUENTA DALE CLICK AQUI ABAJO</p>
-    <img class="boton" src="menu/pulse-aqui.png" onclick="register()">
+    <img class="boton" src="menu/pulse-aqui.png" id="btn-register">
 </div>
 <div class="registrar-form" id="fr-rg">
     <h1 class="registrar-titu">REGISTRAR</h1>
     <input type="text" id="user" placeholder="INGRESA TU USUARIO">
     <input type="password" id="pass" placeholder="INGRESA TU PASSWORD">
-    <input type="button" value="REGISTRAR" onclick="validar_rg()">
+    <input type="button" value="REGISTRAR" onclick="validarg()">
 </div>
 
 <div class="login-form" id="fr-lg">
@@ -45,7 +45,9 @@
 </div>
 <!--termino de formulario-->
     </main>
-    <script defer src="javascript/funciones.js?5"></script>
+   
+    <script src="javascript/login-register.js?55"></script>
+    <script src="javascript/app_register.js?3"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     
