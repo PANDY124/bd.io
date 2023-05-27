@@ -13,7 +13,7 @@ const validarg=async()=>{
             color: 'white'
         })
 
-}
+}else{
 //parte para insertar los datos a mysql
 const datos =  new FormData();
 datos.append('user',user_rg);
@@ -43,6 +43,6 @@ if(resultado.success=="true"){
         color: 'white'
     })
 }
-
+}
 }
 
