@@ -11,6 +11,16 @@ if(user_lg.trim()==='' || pass_lg.trim()===''){
         color: 'white'
     })
 
+}else{
+    //verificar si es correcta la contraseña
+    const datos_lg= new FormData();
+    datos_lg.append("user-lg",user_lg);
+    datos_lg.append("pass-lg",pass_lg);
+    var respuestalg= await fetch("php/funciones.php",{
+        method:"POST",
+        body:datos_lg
+    });
+
 }
 
 }  

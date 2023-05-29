@@ -30,3 +30,12 @@ if($_POST){
 }
 echo json_encode($valido);
 ?>
+<?php 
+$valido_lg['success']=array('success' => false , 'mensaje'=> '');
+if($_POST){
+    $user_lg = $_POST['user-lg'];
+    $pass_lg = $_POST['pass-lg'];
+    
+}
+
+?>
