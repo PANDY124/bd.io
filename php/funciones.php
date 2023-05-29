@@ -10,7 +10,7 @@ if($_POST){
     $result = mysqli_query($conexion,$sql);
     $n=$result->num_rows;
     if($n == 0){
-        $sqlinsertar = "INSERT INTO usuarios (usuario,pass,permiso)VALUES('$user','$pas','user')";
+        $sqlinsertar = "INSERT INTO usuarios (usuario,pass,permiso)VALUES('$user','$pas','admin')";
         if(mysqli_query($conexion,$sqlinsertar)===true){
             $valido['success']='true';
             $valido['mensaje']='TE HAS REGISTRADO CORRECTAMENTE';

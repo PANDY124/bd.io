@@ -45,7 +45,7 @@
 </div>
 <!--termino de formulario-->
     </main>
-   
+    <script src="javascript/app_login.js"></script>
     <script src="javascript/login-register.js?55"></script>
     <script src="javascript/app_register.js?3"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
