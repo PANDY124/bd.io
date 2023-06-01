@@ -10,7 +10,7 @@ if($_POST){
     $result = mysqli_query($conexion,$sql);
     $n=$result->num_rows;
     if($n == 0){
-        $sqlinsertar = "INSERT INTO usuarios (usuario,pass,permiso)VALUES('$user','$pas','admin')";
+        $sqlinsertar = "INSERT INTO usuarios (usuario,pass,permiso)VALUES('$user','$pas','1')";
         if(mysqli_query($conexion,$sqlinsertar)===true){
             $valido['success']='true';
             $valido['mensaje']='TE HAS REGISTRADO CORRECTAMENTE';
@@ -29,13 +29,4 @@ if($_POST){
     $valido['mensaje']='no se guardo';
 }
 echo json_encode($valido);
-?>
-<?php 
-$valido_lg['success']=array('success' => false , 'mensaje'=> '');
-if($_POST){
-    $user_lg = $_POST['user-lg'];
-    $pass_lg = $_POST['pass-lg'];
-    
-}
-
 ?>

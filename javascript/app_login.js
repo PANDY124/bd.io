@@ -16,11 +16,28 @@ if(user_lg.trim()==='' || pass_lg.trim()===''){
     const datos_lg= new FormData();
     datos_lg.append("user-lg",user_lg);
     datos_lg.append("pass-lg",pass_lg);
-    var respuestalg= await fetch("php/funciones.php",{
+    var respuestalg= await fetch("php/funcionlg.php",{
         method:"POST",
         body:datos_lg
     });
+    //recojemos los resultados de las consultas en php
+var resultado = await respuestalg.json();
+//preguntamos si el resultado que arroja php es success o false
+if(resultado.success=="false"){
+    Swal.fire({
+        icon: 'error',
+        title: 'ERROR',
+        text: resultado.mensaje,
+        background: 'rgb(89, 0, 255,0.8)',
+        color: 'white'
+    })
+}else{
+    if(resultado.mensaje=='admin'){
+        window.location.href="indexadmin.php";
+    }else{
+        window.location.href="index.php";
+    }
 
 }
-
-}  
+  }
+}

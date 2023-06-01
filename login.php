@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css?1">
+    <link rel="stylesheet" href="estilos.css?13">
     
     <title>LOGIN</title>
 </head>
@@ -38,16 +38,16 @@
     <h1 class="login-titu">INICIAR SESION</h1>
     <input type="text" id="user-lg" placeholder="INGRESA TU USUARIO">
     <input type="password" id="pass-lg" placeholder="INGRESA TU PASSWORD">
-    <input type="button" value="LOGIN" onclick="validar_lg()" >
+    <input type="button" value="LOGIN" onclick="validar_lg()">
 </div>
 
 
 </div>
 <!--termino de formulario-->
     </main>
-    <script src="javascript/app_login.js"></script>
-    <script src="javascript/login-register.js?55"></script>
-    <script src="javascript/app_register.js?3"></script>
+    <script src="javascript/app_login.js?5"></script>
+    <script src="javascript/login-register.js?2"></script>
+    <script src="javascript/app_register.js?4"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     
