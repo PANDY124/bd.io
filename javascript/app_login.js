@@ -31,6 +31,15 @@ if(resultado.success=="false"){
         background: 'rgb(89, 0, 255,0.8)',
         color: 'white'
     })
+}else{
+    if(resultado.mensaje=='user'){
+    
+       window.location.href="usuarios.php";
+    }else{
+        
+        window.location.href="indexadmin.php";
+    }
+
 }
   }
 }

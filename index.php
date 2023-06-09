@@ -1,3 +1,8 @@
+<?php 
+
+include("php/verifylg.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <?php include("menu.html"); ?>
-    <title>Document</title>
+    <?php 
+    //se incluye el menu para los usuarios
+    include("menus/menu.html"); 
+    ?>
+    <title>Biblioteca Digital</title>
 </head>
 <body>
     
