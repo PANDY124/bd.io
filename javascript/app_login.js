@@ -31,13 +31,6 @@ if(resultado.success=="false"){
         background: 'rgb(89, 0, 255,0.8)',
         color: 'white'
     })
-}else{
-    if(resultado.mensaje=='admin'){
-        window.location.href="indexadmin.php";
-    }else{
-        window.location.href="index.php";
-    }
-
 }
   }
 }
