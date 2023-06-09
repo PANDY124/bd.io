@@ -1,3 +1,9 @@
+
+<?php 
+//se incluye la verificacion de session
+include("php/verifylg.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +15,13 @@
     <title>LOGIN</title>
 </head>
 
-<?php include("menu.html"); 
-    
+<?php 
+//menu 
+include("menus/menu.html"); 
 ?>
+
 <body>
+
     <main>
 
 <!--formulario para login y registro-->
@@ -45,11 +54,11 @@
 </div>
 <!--termino de formulario-->
     </main>
-    <script src="javascript/app_login.js?5"></script>
-    <script src="javascript/login-register.js?2"></script>
-    <script src="javascript/app_register.js?4"></script>
+    <script src="javascript/app_login.js?45"></script>
+    <script src="javascript/login-register.js?24"></script>
+    <script src="javascript/app_register.js?23"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+ 
     
     
 </body>
