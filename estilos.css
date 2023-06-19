@@ -16,6 +16,7 @@ nav h1{
     color: white;
     margin-left: 80px;
     text-align: center;
+    overflow: hidden;
 
     
 }
@@ -24,6 +25,7 @@ nav{
     display: block;
     width: 100%;
     background-color: dodgerblue;
+    overflow: hidden;
 
 }
 nav .menu-1{
@@ -57,16 +59,10 @@ nav .menu-1{
 .menu::-webkit-scrollbar{
     display: none;
 }
-main::-webkit-scrollbar{
+.menu::-webkit-scrollbar{
     display: none;
 
 }
-/*Ocultar scroll para IE, Edge y Firefox*/
-.menu{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
 .menu ul{
     position: relative;
     margin-top: 30px;
@@ -83,11 +79,13 @@ main::-webkit-scrollbar{
     transition: .6s;
 
 }
+
 .menu li h3{
     margin-left: 20px;
     margin-top: 9px;
     font-size: 15px;
     color: white;
+    padding-left: 5px;
 }
 .menu li img{
     width: 50px;
@@ -109,6 +107,7 @@ main::-webkit-scrollbar{
 .login2{
     left: 0px;
 }
+
 
 /*TERMINA ESTILOS DE JAVA SCRIPT*/
 /*login*/
@@ -342,3 +341,156 @@ transition: .5s;
 }
 /* termino pantalla de 777px para abajo*/
 /*termino de responsive*/
+/*ESTILOS DE MENU ADMINISTRADOR*/
+.sub-con{
+    position: relative;
+    left: 0px;
+    height: 0px;
+    transition: 4s;
+   
+}
+.sub-con li{
+  position: relative;
+  margin-bottom:2px;
+  left: -80px;
+  margin-top: 19px;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100px;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 15px;
+  overflow: hidden;
+  padding-top: 4px;
+
+
+}
+.sub-con li:hover{
+    background-color: #0E09B2;
+}                               
+.menu li[id="mod"]{
+    overflow: hidden;
+    cursor: pointer;
+    height: auto;
+    margin-bottom: 50px;
+    transition: 1.5s;
+
+}
+.sub2{
+    height: auto;
+}
+
+/*TERMINO DE ESTILO DE MENU ADMIN*/
+/*permisos ad*/
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    overflow-y:scroll ;
+    background-image: url("fondos/fondoad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.datos1{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    background-color: white;
+    height: 300px;
+    width: auto;
+    left: 400px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    transition: 4s;
+}
+.datos1::-webkit-scrollbar{
+    display: none;
+}
+.datos1::-webkit-scrollbar{
+    display: none;
+
+}
+
+
+
+.fondo::-webkit-scrollbar{
+    display: none;
+}
+.fondo::-webkit-scrollbar{
+    display: none;
+
+}
+
+.datos1 td{
+text-align: center;
+width: 100px;
+height: auto;
+border: black 3px solid;
+}
+.fondo h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px red, 0 0 50px red, 0 0 100px red;
+}
+.info{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+   
+}
+.inf{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px wheat;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    left: 30px;
+
+}
+.inf:hover{
+    width: 80px;
+    height: 80px;
+}
+.edit{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.fondo input[name='buscador']{
+    position:absolute;
+    left: 400px;
+    height: 50px;
+    width: 600px;
+    display:flex;
+    top: 90px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+.fondo input[name='buscador']::placeholder{
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+.datos{
+    position:absolute ;
+    top: 240px;
+    left: 450px;
+    color:red;
+    font-size: 40px;
+    transition: .5s;
+
+}
+
+/*temino de permisos ad*/

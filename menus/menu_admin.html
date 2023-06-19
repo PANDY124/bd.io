@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css?2">
+    <link rel="stylesheet" href="menus/estilos.css?412">
     <title></title>
 </head>
 <body id="body"><!--id del body es para desplazar toda el contenido del body para cuando se 
@@ -12,7 +12,7 @@ abra el menu-->
     <!-- CABECERA DE LA PAGINA-->
     <nav>
         <img src="menu/menu.png" class="menu-1" id="btn-open">
-        <h1>BIENVENIDO A LA BIBLIOTECA DIGITAL</h1>
+        <h1>BIENVENIDO A LA BIBLIOTECA DIGITAL ADMINISTRADOR</h1>
     </nav>
     <!-- ESTRUCTURA DEL MENU -->
     <div class="menu" id="side">
@@ -29,6 +29,30 @@ abra el menu-->
             <img src="menu/galeria-de-fotos.png">
             <h3>GALERIA</h3>
         </li></a>
+        <a href="#"  id="log"><li>
+            <img src="menu/seguidores.png">
+            <h3>AGREGAR</h3>
+        </li></a>
+        <li id="mod">
+            <img src="menu/configuracion.png">
+            <h3>Modificar▼</h3>
+            <ul class="sub-con" id="sub1">
+                <a href="permisoad.php"><li >PERMISOS</li></a>
+                <a href="#"><li >PROYECTOS</li></a>
+              
+            </ul>
+         <script>
+
+document.getElementById("mod").addEventListener("click",menu);
+var modi = document.getElementById("mod");
+var sub = document.getElementById("sub1");
+
+function menu(){
+    sub.classList.toggle("sub2");
+}
+
+         </script>
+        </li>
         <a href="php/close.php"  id="log"><li>
             <img src="menu/salida.png">
             <h3>SALIR</h3>
