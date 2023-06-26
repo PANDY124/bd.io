@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilos.css?33">
+    <link rel="stylesheet" href="estilos.css?34">
     <?php 
     //se incluye el menu y la consulta a la base de datos de la tabla usuarios
     include("menus/menu_admin.html");
     include("php/consultusers.php");
-    
+    include("php/consul.php");
     ?>
    
 </head>
@@ -45,4 +45,6 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  <script src="javascript/busqueda.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="javascript/delete.js?23"></script>
+ 
 </html>

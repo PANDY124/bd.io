@@ -399,8 +399,9 @@ transition: .5s;
     display: flex;
     position: absolute;
     top: 150px;
+    max-height: 300px;
     background-color: white;
-    height: 300px;
+    height: auto;
     width: auto;
     left: 400px;
     overflow-y: scroll;
@@ -492,5 +493,17 @@ border: black 3px solid;
     transition: .5s;
 
 }
+.btn{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 10px;
 
+}
+.btn:hover{
+    background-color: darkred;
+}
 /*temino de permisos ad*/
