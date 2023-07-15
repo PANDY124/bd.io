@@ -31,9 +31,7 @@ if($_POST){
                 $_SESSION['usuario']=$user_lg;
                 $valido_lg['success']='true';
                 $valido_lg['mensaje']='user';
-             
-               
-             
+
                 
             }
         }else{

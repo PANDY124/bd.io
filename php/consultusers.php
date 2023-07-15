@@ -36,7 +36,7 @@ while($fila=$resultado->fetch_assoc()){
     <td>".$fila['usuario']."</td>
     <td>".$fila['permiso']."</td>
     <td><img src='iconos/editar.png' class='edit'></td>
-    <td><img src='iconos/contrasena.png' id='editcontra' class='edit'></td>
+    <td><img src='iconos/contrasena.png' onclick='pass_modificar(".$fila['id'].")' class='edit'></td>
     <td><img src='iconos/borrar.png' class='edit' onclick='eliminar(".$fila['id'].")'></td>
 </tr>";
 }
